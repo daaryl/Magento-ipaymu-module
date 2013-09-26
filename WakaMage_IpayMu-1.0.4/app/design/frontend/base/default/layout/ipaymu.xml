@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+
+    <ipaymu_payment_noidr>
+        <reference name="head">
+            <action method="setTitle" translate="title"><title>Ganti Mata Uang</title></action>
+        </reference>
+        <reference name="root">
+		     <action method="setTemplate"><template>page/1column.phtml</template></action>
+            <action method="setHeaderTitle" translate="title"><title>Ganti Mata Uang</title></action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="ipaymu" template="ipaymu/noidr.phtml"/>
+			<block type="directory/currency" name="currency" template="directory/currency.phtml"/>
+        </reference>
+    </ipaymu_payment_noidr>
+	
+	<ipaymu_billing_index>
+        <reference name="head">
+            <action method="setTitle" translate="title"><title>Konfirmasi Pembayaran IPAYMU</title></action>
+        </reference>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+            <action method="setHeaderTitle" translate="title"><title>Konfirmasi Pembayaran IPAYMU</title></action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="ipaymuForm" template="ipaymu/billing/form.phtml"/>
+        </reference>
+    </ipaymu_billing_index>
+	
+    <ipaymu_billing_post>
+        <reference name="head">
+            <action method="setTitle" translate="title"><title>Konfirmasi Pembayaran Terkirim</title></action>
+        </reference>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+            <action method="setHeaderTitle" translate="title"><title>Konfirmasi Pembayaran Terkirim</title></action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="ipaymuSubmitted" template="ipaymu/billing/submitted.phtml"/>
+        </reference>
+    </ipaymu_billing_post>
+	
+	<checkout_onepage_success>
+		<reference name="checkout.success">
+			<action method="setTemplate">
+				<template>ipaymu/checkout/success.phtml</template>
+			</action>
+		</reference>
+	</checkout_onepage_success>
+
+</layout>

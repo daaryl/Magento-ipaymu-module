@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<config>
+  	<modules>
+    	<WakaMage_IpayMu>
+      		<version>1.0.4</version>
+    	</WakaMage_IpayMu>
+  	</modules>
+  	<global>
+    	<models>
+      		<ipaymu>
+        		<class>WakaMage_IpayMu_Model</class>
+      		</ipaymu>
+    	</models>
+		<helpers>
+			<ipaymu>
+				<class>WakaMage_IpayMu_Helper</class>
+			</ipaymu>
+		</helpers>
+		<blocks>
+      		<ipaymu>
+        		<class>WakaMage_IpayMu_Block</class>
+      		</ipaymu>
+    	</blocks>
+		<template>
+            <email>
+                <ipaymu_billing_form translate="label" module="ipaymu">
+                    <label>IPAYMU Billing Form</label>
+                    <file>ipaymu_billing_form.html</file>
+                    <type>text</type>
+                </ipaymu_billing_form>
+            </email>
+        </template>
+  	</global>
+  	<default>
+    	<payment>
+      		<ipaymu>
+				<model>ipaymu/standard</model>
+				<active>1</active>
+				<order_status>pending</order_status>
+				<title>IPAYMU</title>
+				<payment_action>sale</payment_action>
+				<allowspecific>0</allowspecific>
+				<sort_order>1</sort_order>
+      		</ipaymu>
+    	</payment>
+  	</default>
+  	<frontend>
+  		<layout>
+            <updates>
+                <ipaymu module="WakaMage_IpayMu">
+                    <file>ipaymu.xml</file>
+                </ipaymu>
+            </updates>
+        </layout>
+    	<routers>
+      		<ipaymu>
+        		<use>standard</use>
+        		<args>
+          			<module>WakaMage_IpayMu</module>
+          			<frontName>ipaymu</frontName>
+        		</args>
+      		</ipaymu>
+    	</routers>
+  	</frontend>
+
+</config>

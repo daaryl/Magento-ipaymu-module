@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package>
+    <name>WakaMage_IpayMu</name>
+    <version>1.0.4</version>
+    <stability>stable</stability>
+    <license uri="http://www.wakamage.com/licenses">Free but Not Shareable</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>IPAYMU Indonesian payment gateway Magento extension.</summary>
+    <description>This extension will process the payment to IPAYMU.</description>
+    <notes>Ver 1.0.4&#xD;
+- Comment sentence change.&#xD;
+- Bug fix on no IDR currency page.&#xD;
+&#xD;
+Ver 1.0.3&#xD;
+- Bug fix cancel URL&#xD;
+&#xD;
+Ver 1.0.2&#xD;
+- IPAYMU custom success order page.&#xD;
+&#xD;
+Ver 1.0.1&#xD;
+- Stable version.&#xD;
+- IPAYMU logo in payment option.&#xD;
+- IPAYMU payment confirmation.&#xD;
+&#xD;
+Ver 1.0.0&#xD;
+- Initial beta version release.</notes>
+    <authors><author><name>WakaMage</name><user>wakamage</user><email>cs@wakamage.com</email></author></authors>
+    <date>2013-08-22</date>
+    <time>06:59:22</time>
+    <contents><target name="magecommunity"><dir name="WakaMage"><dir name="IpayMu"><dir name="Block"><dir name="Payment"><dir name="Form"><file name="Ipaymu.php" hash="0c212e083c2a3101b24150cd88f81cc7"/></dir><file name="Redirect.php" hash="419d6a4149ef055bbfac842b3ac4b429"/></dir><file name="Sending.php" hash="1d7eaad25f50af1d726a4b3d74e92144"/><file name="Success.php" hash="7ed038e1225b6c79eca686d64e3a36df"/><file name="Whatisipaymu.php" hash="d6447522a9d630d5aab1c6b2745deab1"/></dir><dir name="Helper"><file name="Data.php" hash="33aa5779babd2158d720914072706a46"/></dir><dir name="Model"><file name="Standard.php" hash="892218ab9a9f6903ba81d500897878a4"/><dir name="System"><dir name="Config"><dir name="Backend"><file name="Links.php" hash="feeeb5397635be2da9fc5ec246de20ca"/></dir></dir></dir></dir><dir name="controllers"><file name="BillingController.php" hash="8b6fd041f5f85a691562fd8ea5074318"/><file name="PaymentController.php" hash="6230e25f67a7da311ffbec2cc694bdb4"/><file name="WhatisipaymuController.php" hash="43db7b58f99515055f734fdd6d3ca737"/></dir><dir name="etc"><file name="config.xml" hash="c4b83835fb61980bc39fbf13eca90216"/><file name="system.xml" hash="537c56712692c3be65588c958d996d15"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="ipaymu.xml" hash="186cc6d13d1144ea2ce84c5aa0f84258"/></dir><dir name="template"><dir name="ipaymu"><dir name="billing"><file name="form.phtml" hash="a7307121b52aafb9622c5dba0f00cd74"/><file name="submitted.phtml" hash="95f3135dc0eefad97790c9570e97e94c"/></dir><dir name="checkout"><file name="success.phtml" hash="2f10c08a4de17b2bf1fa505cb80ea92b"/></dir><file name="ipaymu.phtml" hash="18a73070a8290f90f0b2ce640a909c9b"/><file name="noidr.phtml" hash="e4460d0cfa105ea339f20ffe910802f6"/><dir name="payment"><dir name="form"><file name="ipaymu.phtml" hash="7abe16756755a351bdd4c92240352bb7"/></dir><file name="redirect.phtml" hash="4b5c0db62fbc71cbdd9ff0bdf2b951f8"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="WakaMage_IpayMu.xml" hash="ebb8b19d08bc87e228f1bc020f68ca9f"/></dir></target><target name="magelocale"><dir name="en_US"><dir name="template"><dir name="email"><file name="ipaymu_billing_form.html" hash="33443c47639e1d77f7d5302951976d53"/></dir></dir></dir></target><target name="magemedia"><dir name="ipaymu"><file name="logo-ipaymu.png" hash="f357348637df1f30c9006a389fec9f00"/><file name="what-is-ipaymu.png" hash="790c4422aa910b55f6fc52c78b98202d"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

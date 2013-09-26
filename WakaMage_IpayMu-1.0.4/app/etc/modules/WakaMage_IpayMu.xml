@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <WakaMage_IpayMu>
+            <active>true</active>
+            <codePool>community</codePool>
+        </WakaMage_IpayMu>
+    </modules>
+</config>
